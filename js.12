@@ -1,0 +1,11 @@
+let array = [1, 2, 3, 4, 5];
+
+
+for (let jp = 0; jp < array.length / 2; jp++) {
+
+    let tem = array[jp];
+    array[jp] = array[array.length - 1 - jp];
+    array[array.length - 1 - jp] = tem;
+}
+
+alert("Array invertido fica : " + array);
