@@ -1,0 +1,13 @@
+Numero = Number( prompt( "Digite um numero inteiro positivo, para calcular o fatorial: " ) );
+
+if ( Number.isInteger(Numero) && Numero >= 0 ) {
+    let fatorial = 1;
+
+    for (let jp = 1 ; jp <= Numero ; jp++ ) {
+        fatorial *= jp ;
+    }
+
+    alert("O fatorial de " + Numero + " é : " + fatorial);
+} else {
+    alert("Por favor, digite um numero inteiro positivo!. ");
+}
