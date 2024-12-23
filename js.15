@@ -1,0 +1,6 @@
+for (let jp = 1; jp <= 50; jp++) {
+
+    if (jp % 3 === 0 || jp % 5 === 0) {
+        alert(jp);
+    }
+}
