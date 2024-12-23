@@ -1,0 +1,12 @@
+let j = 0;
+let p = 1;
+
+let fibonacci = j + ", " + p;
+
+for (let jp = 2; jp < 10; jp++) {
+    let m = j + p;
+    fibonacci += ", " + m;
+    j = p;
+    p = m;
+}
+{alert("Os 10 primeiros números da sequênci de Fibonacci é : " + fibonacci);}
