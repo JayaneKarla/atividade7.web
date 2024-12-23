@@ -1,0 +1,18 @@
+
+let palavra = prompt("Digite uma palavra para verificar se é um palindromo:");
+
+let Palindromo = true;
+
+
+for (let jp = 0; jp < Math.floor(palavra.length / 2); jp++) {
+    if (palavra[jp] !== palavra[palavra.length - 1 - jp]) {
+        Palindromo = false;
+        break;
+    }
+}
+
+if (Palindromo) {
+    alert(palavra + " é um palindromo.");
+} else {
+    alert(palavra + " não é um palindromo.");
+}
