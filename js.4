@@ -1,0 +1,16 @@
+let numero = Number ( prompt( "Digite um numero para ver a tabuada: "));
+
+if ( Number.isInteger(numero)) {
+    
+    let mensagem = "Tabuada do " + numero + " :\n ";
+  
+    for (let jp = 1 ; jp <= 10; jp++ ) {
+        mensagem += numero + " x " + jp + " = " + (numero * jp ) + "\n";
+    }
+  
+    alert(mensagem);
+
+} else {
+
+    alert("Por favor, digite um numero entre 1 a 10 .");
+}
